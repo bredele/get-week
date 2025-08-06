@@ -5,13 +5,13 @@ Generate 7-day week calendar for any given date with configurable start day.
 ## Installation
 
 ```sh
-npm install get-week
+npm install @bredele/get-week
 ```
 
 ## Usage
 
 ```ts
-import getWeek from 'get-week';
+import getWeek from '@bredele/get-week';
 
 // get current week starting Monday (current date: Wed Aug 6th 2025)
 getWeek();
@@ -29,4 +29,3 @@ getWeek(new Date('10-10-2010'), 0);
 - **startDay** (optional): Day of week to start from (0-6 where 0=Sunday, 6=Saturday). Defaults to 1 (Monday).
 
 Returns an array of 7 date objects in `{day, month, year}` format.
-

@@ -1,5 +1,5 @@
 {
-  "name": "get-week",
+  "name": "@bredele/get-week",
   "version": "1.0.0",
   "description": "Generate 7-day week calendar for any given date with configurable start day.",
   "main": "./dist/cjs/index.js",
@@ -11,10 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/bredele/get-week.git"
   },
-  "keywords": [
-    "week",
-    "calendar"
-  ],
+  "keywords": ["week", "calendar"],
   "author": "Olivier Wietrich",
   "license": "MIT",
   "bugs": {
@@ -34,7 +31,5 @@
       "types": "./dist/types/index.d.ts"
     }
   },
-  "files": [
-    "dist"
-  ]
+  "files": ["dist"]
 }
