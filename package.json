@@ -2,7 +2,7 @@
   "name": "get-week",
   "version": "1.0.0",
   "description": "Generate 7-day week calendar for any given date with configurable start day.",
-  "main": "dist/cjs/index.js",
+  "main": "./dist/cjs/index.js",
   "scripts": {
     "test": "node --test dist/cjs/**/*.test.js",
     "build": "cmplr --type-check"
@@ -11,7 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/bredele/get-week.git"
   },
-  "keywords": ["week", "calendar"],
+  "keywords": [
+    "week",
+    "calendar"
+  ],
   "author": "Olivier Wietrich",
   "license": "MIT",
   "bugs": {
@@ -21,5 +24,17 @@
   "devDependencies": {
     "cmplr": "^1.3.0",
     "@types/node": "^24.2.0"
-  }
+  },
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ]
 }
